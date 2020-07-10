@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import absolute_import, print_function, division
-import tensorflow.contrib.slim as slim
+import tf_slim as slim
 import tensorflow as tf
 
 from libs.networks.mobilenet import mobilenet_v2

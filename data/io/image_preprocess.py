@@ -52,7 +52,7 @@ def short_side_resize_for_inference_data(img_tensor, target_shortside_len, lengt
                                                target_shortside_len))
 
       img_tensor = tf.expand_dims(img_tensor, axis=0)
-      img_tensor = tf.image.resize_bilinear(img_tensor, [new_h, new_w])
+      img_tensor = tf.image.resize(img_tensor, [new_h, new_w])
 
       img_tensor = tf.squeeze(img_tensor, axis=0)  # ensure image tensor rank is 3
     return img_tensor

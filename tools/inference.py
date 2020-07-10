@@ -5,7 +5,8 @@ from __future__ import print_function
 from __future__ import division
 
 import os, sys
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import time
 import cv2
 import argparse
